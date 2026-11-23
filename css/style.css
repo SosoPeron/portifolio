@@ -1,0 +1,786 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F3EF;
+    color: #554B49;
+}
+
+/* MENU */
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px 6%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #A9BEB4;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #554B49;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #A9BEB4;
+}
+
+/* PÁGINA INICIAL */
+
+.inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 50px;
+}
+
+.texto-inicio {
+    max-width: 550px;
+}
+
+.subtitulo {
+    color: #A9BEB4;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.texto-inicio h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.texto-inicio h1 span {
+    color: #A9BEB4;
+}
+
+.texto-inicio h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.texto-inicio p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    background-color: #A9BEB4;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #849F93;
+}
+
+/* FOTO */
+
+.foto-inicio img {
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 160px 160px 20px 20px;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .foto-inicio img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto-inicio h1 {
+        font-size: 35px;
+    }
+}
+
+
+/* PÁGINA MINHA HISTÓRIA */
+
+.titulo-pagina {
+    text-align: center;
+    padding: 65px 20px 40px;
+}
+
+.titulo-pagina h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.titulo-pagina h1 span {
+    color: #A9BEB4;
+}
+
+.titulo-pagina > p:last-child {
+    line-height: 1.8;
+}
+
+/* SOBRE MIM */
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 10% 70px;
+}
+
+.foto-historia img {
+    width: 300px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.texto-historia {
+    max-width: 550px;
+}
+
+.texto-historia h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #849F93;
+}
+
+.texto-historia p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* MOTIVAÇÃO */
+
+.motivacao {
+    background-color: #E8EFEB;
+    padding: 50px 15%;
+    text-align: center;
+}
+
+.motivacao h2 {
+    color: #849F93;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.motivacao p {
+    line-height: 1.9;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .sobre-mim {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-historia img {
+        max-width: 100%;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* EXPERIÊNCIA PESSOAL */
+
+.experiencia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 10%;
+    background-color: #FFFFFF;
+}
+
+.texto-experiencia {
+    max-width: 550px;
+}
+
+.texto-experiencia h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.texto-experiencia p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.foto-tratamento img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* AJUSTE PARA CELULAR */
+
+@media (max-width: 900px) {
+
+    .experiencia {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-tratamento img {
+        max-width: 100%;
+    }
+
+}
+
+/* PÁGINA FORMAÇÃO */
+
+.formacao-escolar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 10% 70px;
+}
+
+.texto-formacao {
+    max-width: 550px;
+}
+
+.texto-formacao h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.texto-formacao p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.imagem-formacao img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.curso-tecnico {
+    background-color: #E8EFEB;
+    padding: 60px 15%;
+    text-align: center;
+}
+
+.curso-tecnico h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.curso-tecnico p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.aprendizados {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.aprendizados h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.cards-aprendizados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-aprendizado {
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-aprendizado h3 {
+    color: #849F93;
+    margin-bottom: 15px;
+}
+
+.card-aprendizado p {
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .formacao-escolar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem-formacao img {
+        max-width: 100%;
+    }
+
+    .curso-tecnico {
+        padding: 50px 10%;
+    }
+
+}
+
+/* PÁGINA MEDICINA */
+
+.sonho-medicina,
+.pediatria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 10% 70px;
+}
+
+.texto-sonho,
+.texto-pediatria {
+    max-width: 550px;
+}
+
+.texto-sonho h2,
+.texto-pediatria h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.texto-sonho p,
+.texto-pediatria p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.imagem-medicina img,
+.imagem-pediatria img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.pediatria {
+    background-color: #E8EFEB;
+}
+
+.qualidades-medicina {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.qualidades-medicina h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.cards-qualidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-qualidade {
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    width: 240px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-qualidade h3 {
+    color: #849F93;
+    margin-bottom: 15px;
+}
+
+.card-qualidade p {
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .sonho-medicina,
+    .pediatria {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem-medicina img,
+    .imagem-pediatria img {
+        max-width: 100%;
+    }
+
+}
+
+/* PÁGINA TECNOLOGIA */
+
+.tecnologia-saude {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 10% 70px;
+}
+
+.texto-tecnologia {
+    max-width: 550px;
+}
+
+.texto-tecnologia h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.texto-tecnologia p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.imagem-tecnologia img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.conhecimentos {
+    background-color: #E8EFEB;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.conhecimentos h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.introducao-conhecimentos {
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.cards-conhecimentos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-conhecimento {
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-conhecimento h3 {
+    color: #849F93;
+    margin-bottom: 15px;
+}
+
+.card-conhecimento p {
+    line-height: 1.7;
+}
+
+.conexao-medicina {
+    padding: 60px 15%;
+    text-align: center;
+}
+
+.conexao-medicina h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.conexao-medicina p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .tecnologia-saude {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem-tecnologia img {
+        max-width: 100%;
+    }
+
+    .conexao-medicina {
+        padding: 50px 10%;
+    }
+
+}
+
+/* PÁGINA OBJETIVOS */
+
+.planos-futuros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 10% 70px;
+}
+
+.texto-planos {
+    max-width: 550px;
+}
+
+.texto-planos h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.texto-planos p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.imagem-objetivos img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.etapas-futuro {
+    background-color: #E8EFEB;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.etapas-futuro h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.linha-tempo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.etapa {
+    background-color: #FFFFFF;
+    padding: 25px 20px;
+    width: 220px;
+    border-radius: 15px;
+}
+
+.numero-etapa {
+    background-color: #A9BEB4;
+    color: #FFFFFF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-weight: bold;
+}
+
+.etapa h3 {
+    color: #849F93;
+    margin-bottom: 15px;
+}
+
+.etapa p {
+    line-height: 1.7;
+}
+
+.mensagem-final {
+    padding: 60px 15%;
+    text-align: center;
+}
+
+.mensagem-final h2 {
+    color: #849F93;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.mensagem-final p {
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .planos-futuros {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem-objetivos img {
+        max-width: 100%;
+    }
+
+    .mensagem-final {
+        padding: 50px 10%;
+    }
+
+}
+.botao-tema {
+    background-color: #E8EFEB;
+    color: #849F93;
+    border: 1px solid #A9BEB4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.botao-tema:hover {
+    background-color: #A9BEB4;
+    transform: scale(1.08);
+}
+
+body.dark-mode .botao-tema {
+    background-color: #343D39;
+    color: #A9BEB4;
+    border-color: #849F93;
+}
+
+/* TEMA ESCURO */
+
+body.dark-mode {
+    background-color: #252B29;
+    color: #F7F3EF;
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode .card-aprendizado,
+body.dark-mode .card-qualidade,
+body.dark-mode .card-conhecimento,
+body.dark-mode .etapa {
+    background-color: #343D39;
+}
+
+body.dark-mode nav a {
+    color: #F7F3EF;
+}
+
+body.dark-mode nav a:hover {
+    color: #A9BEB4;
+}
+
+body.dark-mode .motivacao,
+body.dark-mode .pediatria,
+body.dark-mode .curso-tecnico,
+body.dark-mode .conhecimentos,
+body.dark-mode .etapas-futuro {
+    background-color: #303A35;
+}
+
+body.dark-mode .experiencia {
+    background-color: #252B29;
+}
+
+body.dark-mode .botao-tema {
+    background-color: #A9BEB4;
+    color: #252B29;
+}
+
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #A9BEB4;
+}
+
+body.dark-mode .numero-etapa {
+    background-color: #849F93;
+    color: #FFFFFF;
+}
